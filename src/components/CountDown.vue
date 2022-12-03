@@ -1,15 +1,15 @@
 <template>
-  <footer>
-
-  </footer>
+  <div>
+    
+  </div>
 </template>
 
 <script>
-export default {
-  name: "FooterComp",
-  props: {},
-};
+  export default {
+    name: "CountDown"
+  }
 </script>
 
 <style lang="scss" scoped>
+
 </style>
