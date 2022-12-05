@@ -1,7 +1,7 @@
 <template>
   <header>
     <CountDown />
-    <NavBar :dataNavBar="navbarArray" />
+    <NavBar :dataNavBar="navbarArray" :dataSocials="socialsArray" />
   </header>
 </template>
 
@@ -43,6 +43,23 @@ export default {
           name: 'Shop',
           url: 'google.com'
         },
+      ],
+      socialsArray: [{
+        image_logo: 'fa-brands fa-twitter />',
+        url: 'https://www.google.it/'
+      },
+      {
+        image_logo: 'fa-brands fa-facebook-f />',
+        url: 'https://www.google.it/'
+      },
+      {
+        image_logo: 'fa-brands fa-instagram />',
+        url: 'https://www.google.it/'
+      },
+      {
+        image_logo: 'fa-brands fa-linkedin />',
+        url: 'https://www.google.it/'
+      },
       ]
     }
   }
