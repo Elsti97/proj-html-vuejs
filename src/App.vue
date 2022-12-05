@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <HeaderComp />
+    <HeaderComp :dataSocials="socialsArray"/>
     <MainComp />
-    <FooterComp />
+    <FooterComp :dataSocials="socialsArray"/>
   </div>
 </template>
 
@@ -17,6 +17,28 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp,
+  },
+  data(){
+    return{
+      socialsArray: [
+        {
+          image_logo: "fa-brands fa-twitter />",
+          url: "https://www.google.it/",
+        },
+        {
+          image_logo: "fa-brands fa-facebook-f />",
+          url: "https://www.google.it/",
+        },
+        {
+          image_logo: "fa-brands fa-instagram />",
+          url: "https://www.google.it/",
+        },
+        {
+          image_logo: "fa-brands fa-linkedin />",
+          url: "https://www.google.it/",
+        },
+      ],
+    }
   }
 }
 </script>

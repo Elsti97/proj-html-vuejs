@@ -7,7 +7,7 @@
       </ul>
     </div>
     <div>
-      <span class="socials" v-for="(elem, index) in dataSocials" :key="index" :dataSocials="(elem)"><font-awesome-icon :icon='elem.image_logo' /></span>
+      <span class="socials" v-for="(elem, index) in dataSocials2" :key="index" :dataSocials2="(elem)"><font-awesome-icon :icon='elem.image_logo' /></span>
     </div>
   </nav>
 </template>
@@ -17,7 +17,7 @@
     name: "NavBar",
     props: {
       dataNavBar: Array,
-      dataSocials: Array,
+      dataSocials2: Array,
     }
   }
 </script>

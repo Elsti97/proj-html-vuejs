@@ -1,7 +1,7 @@
 <template>
   <div class="bg-silver">
     <div class="width-50">
-      <div>Stars TOMORROW! Our biggest event of the year...</div>
+      <div class="c-gray">Stars TOMORROW! Our biggest event of the year...</div>
       <div class="count">
         <font-awesome-icon icon="fa-regular fa-clock" />
         <span class="strong">00:00:00:00</span>
@@ -31,6 +31,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  .c-gray{
+    color: gray;
+  }
 
   .count{
     margin: 0 1rem;
