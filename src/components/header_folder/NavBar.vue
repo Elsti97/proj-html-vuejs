@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar_fix">
-    <img src="../assets/images/dark-logo.png" alt="logo sito">
+    <img src="../../assets/images/dark-logo.png" alt="logo sito">
     <div>
       <ul>
         <li v-for="(elem, index) in dataNavBar" :key="index" :dataNavBar="(elem)">{{elem.name}} <font-awesome-icon icon="fa-solid fa-angle-down" /></li>

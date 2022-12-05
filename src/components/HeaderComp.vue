@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import CountDown from './CountDown.vue';
-import NavBar from './NavBar.vue'
+import CountDown from './header_folder/CountDown.vue';
+import NavBar from './header_folder/NavBar.vue'
 
 export default {
   name: "HeaderComp",
