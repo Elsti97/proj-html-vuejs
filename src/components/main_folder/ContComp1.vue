@@ -94,7 +94,18 @@
       </div>
     </div>
     <!--* YT VIDEO -->
-    <div></div>
+    <div class="flex">
+      <img
+        class="img-yt"
+        src="../../assets/images/artist-video-poster.jpg"
+        alt="video yt"
+      />
+      <img
+        class="icon-yt"
+        src="../../assets/images/icon-youtube-play.png"
+        alt="icon yt"
+      />
+    </div>
   </div>
 </template>
 
@@ -143,14 +154,14 @@ button {
   padding: 1rem;
   border-radius: 0.3rem;
 }
-.container-cit{
+.container-cit {
   display: flex;
   width: 60%;
   margin: 5rem auto;
-  .width-40{
+  .width-40 {
     width: 40%;
   }
-  .width-60{
+  .width-60 {
     width: 60%;
     padding-left: 4rem;
     p {
@@ -158,7 +169,19 @@ button {
     }
   }
 }
-p{
+p {
   color: #797979;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .img-yt {
+    position: relative;
+  }
+  .icon-yt {
+    position: absolute;
+  }
 }
 </style>
