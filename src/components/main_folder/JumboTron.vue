@@ -1,6 +1,6 @@
 <template>
-  <div class="jumbotron width-3">
-    <div class="left-jumbo relative">
+  <div class="jumbotron width-3 relative">
+    <div class="left-j jumbo absolute">
       <img
         v-for="(elem, index) in imageJumboLeft"
         :key="index"
@@ -10,10 +10,12 @@
         :class="elem.class"
       />
     </div>
-    <div class="center-jumbo">
-      <h1>Hello here</h1>
+    <div class="center-j jumbo">
+      <h1 class="font-celeste">Hello, Im Matin</h1>
+      <h1>Artist Coaching And Mentoring Might Be for You.</h1>
+      <button>Get started today</button>
     </div>
-    <div class="right-jumbo relative">
+    <div class="right-j jumbo absolute">
       <img
         v-for="(elem, index) in imageJumboRight"
         :key="index"
@@ -38,22 +40,18 @@ export default {
 
 <style lang="scss" scoped>
 .jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30rem;
-  background-color: #FBF9F6;
+  background-color: #fbf9f6;
   // background-color: black;
-  .width-3{
-    display: flex;
-    justify-content: center;
-    width: calc(100% / 3);
-    h1{
-      color: red;
-    }
-  }
   .relative {
     position: relative;
   }
   .absolute {
     position: absolute;
+    width: 100px;
   }
   .a-0 {
     z-index: -1;
@@ -71,4 +69,26 @@ export default {
     z-index: 4;
   }
 }
+.jumbo {
+  display: flex;
+}
+.center-j {
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 10rem 0;
+  button{
+    background-color: #EF6F31;
+    border: none;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    border-radius: .3rem;
+    color: white;
+  }
+
+}
+// .left-j, .right-j{
+//   display: none;
+// }
 </style>

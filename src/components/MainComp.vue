@@ -76,5 +76,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.font-celeste{
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3rem;
+    color: #69a0fd;
+}
 </style>
