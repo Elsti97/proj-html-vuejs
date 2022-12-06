@@ -54,7 +54,7 @@ export default {
       instaArray: [
         {
           photo: '120084500_197897808368764_8114555493043279565_n.jpg',
-          url: 'https://www.google.com/'
+          url: 'https://www.instagram.com/'
         },
         {
           photo: '120012142_177596140500760_8623485824101406058_n.jpg',

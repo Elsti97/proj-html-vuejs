@@ -23,19 +23,19 @@ export default {
       socialsArray: [
         {
           image_logo: "fa-brands fa-twitter />",
-          url: "https://www.google.it/",
+          url: "https://www.twitter.com/",
         },
         {
           image_logo: "fa-brands fa-facebook-f />",
-          url: "https://www.google.it/",
+          url: "https://www.facebook.com/",
         },
         {
           image_logo: "fa-brands fa-instagram />",
-          url: "https://www.google.it/",
+          url: "https://www.instagram.com/",
         },
         {
           image_logo: "fa-brands fa-linkedin />",
-          url: "https://www.google.it/",
+          url: "https://www.linkedin.com/",
         },
       ],
     }

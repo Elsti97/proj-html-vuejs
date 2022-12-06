@@ -8,13 +8,16 @@
           <li>382 NE 191st St # 87394 Miami, FL 33179-3899</li>
           <li>+1(305)547-9909(9am - 5pm EST, Monday - Friday)</li>
           <li>382 NE 191st St # 87394 Miami, FL 33179-3899</li>
-          <span
-            class="socials"
+          <a
             v-for="(elem, index) in dataSocials2"
             :key="index"
             :dataSocials2="elem"
-            ><font-awesome-icon :icon="elem.image_logo"
-          /></span>
+            :href="elem.url"
+          >
+            <span class="socials"
+              ><font-awesome-icon :icon="elem.image_logo" />
+            </span>
+          </a>
         </ul>
       </div>
 
@@ -45,13 +48,17 @@
       <!-- INSTAGRAM -->
       <div class="insta">
         <h3>Instagram <a href="https://www.instagram.com/">@maxcoach</a></h3>
-        <img
+        <a
           v-for="(elem, index) in dataInsta"
           :key="index"
           :dataInsta="elem"
-          :src="require(`../../assets/images/${elem.photo}`)"
-          alt="photo insta"
-        />
+          :href="elem.url"
+        >
+          <img
+            :src="require(`../../assets/images/${elem.photo}`)"
+            alt="photo insta"
+          />
+        </a>
       </div>
     </div>
     <p class="copyright">© 2020 Maxcoach. All Rights Reserved</p>
