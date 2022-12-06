@@ -23,10 +23,13 @@
           </div>
         </div>
       </div>
+      <button class="orange-button">View all courses <font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
     </div>
 
     <!--* ARTICLES AND TIPS -->
-    <div></div>
+    <div>
+
+    </div>
 
     <!--* EVENTS -->
     <div></div>
@@ -46,6 +49,16 @@ export default {
 .width-80 {
   width: 80%;
   margin: 3rem auto;
+  .orange-button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #EF6F31;
+    background-color: lightgray;
+    border: none;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 0.3rem;
+  }
 }
 .text-center {
   text-align: center;
