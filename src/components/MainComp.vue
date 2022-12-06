@@ -6,7 +6,7 @@
     />
     <ContComp1 />
     <CaroselComp :dataPhotos="photosArray" />
-    <ContComp2 />
+    <ContComp2 :dataCards="cardsArray"/>
     <ArticlesComp />
   </main>
 </template>
@@ -104,6 +104,64 @@ export default {
           work: "Freelancer",
         },
       ],
+      cardsArray: [
+        {
+          image: "artist-course-01-480x480.jpg",
+          price: "$18.00",
+          name: "The Acrylic Painting Academy",
+          lessons: "4 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-02-480x480.jpg",
+          price: "$21.00",
+          name: "Drawing and Shading: Complete Course",
+          lessons: "14 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-03-480x480.jpg",
+          price: "$19.00",
+          name: "The Color Theory for Digital Artist",
+          lessons: "7 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-04-480x480.jpg",
+          price: "$35.00",
+          name: "Ultimate Guide to Digital Sketching fot Beginner",
+          lessons: "14 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-05-480x480.jpg",
+          price: "$19.00",
+          name: "Portait Drawing The Smart Way",
+          lessons: "2 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-06-480x480.jpg",
+          price: "$19.00",
+          name: "Mastering Watercolor Painting from Beginner",
+          lessons: "9 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-07-480x480.jpg",
+          price: "$25.00",
+          name: "The Art & Science of Drawing",
+          lessons: "4 Lessons",
+          students: "50 Students"
+        },
+        {
+          image: "artist-course-08-480x480.jpg",
+          price: "$22.00",
+          name: "The Colored Pencil Drawing Course",
+          lessons: "6 Lessons",
+          students: "50 Students"
+        },
+      ]
     };
   },
 };

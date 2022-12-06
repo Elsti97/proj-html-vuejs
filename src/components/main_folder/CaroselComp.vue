@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray">
     <div class="text-center">
       <h1 class="font-celeste">Testimonials</h1>
       <h1>Why do people love me?</h1>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg-gray{
+  background-color: lightgray;
+}
 .text-center {
   text-align: center;
   margin-top: 3rem;
@@ -58,6 +61,7 @@ export default {
   .card {
     padding: 2rem 1rem;
     text-align: center;
+    background-color: white;
     img {
       width: 20%;
       border-radius: 50%;
