@@ -45,7 +45,6 @@ export default {
   align-items: center;
   height: 30rem;
   background-color: #fbf9f6;
-  // background-color: black;
   .relative {
     position: relative;
   }
@@ -73,22 +72,20 @@ export default {
   display: flex;
 }
 .center-j {
-  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding: 10rem 0;
-  button{
-    background-color: #EF6F31;
+  button {
+    background-color: #ef6f31;
     border: none;
     margin-top: 3rem;
     padding: 1rem 3rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     color: white;
   }
-
 }
-// .left-j, .right-j{
-//   display: none;
-// }
+.left-j,
+.right-j {
+  display: none;
+}
 </style>
