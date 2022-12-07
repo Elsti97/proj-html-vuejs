@@ -274,4 +274,8 @@ export default {
   transform: translate(0, -2rem);
   background-color: white;
 }
+.orange-button:hover{
+  background-color: blue;
+  color: white;
+}
 </style>

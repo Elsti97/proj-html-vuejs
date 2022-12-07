@@ -54,4 +54,8 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+button:hover{
+  background-color: blue;
+  color: white;
+}
 </style>
