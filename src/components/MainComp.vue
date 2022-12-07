@@ -58,12 +58,12 @@ export default {
           class: "absolute a-0",
         },
         {
-          image: "artist-shape-01-300x288.png",
-          class: "absolute a-0",
-        },
-        {
           image: "artist-shape-03.png",
           class: "absolute a-2",
+        },
+        {
+          image: "artist-shape-04.png",
+          class: "absolute a-3",
         },
         {
           image: "artist-shape-05.png",
