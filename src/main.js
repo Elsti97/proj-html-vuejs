@@ -11,12 +11,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret, faAngleDown, faCircle, faArrowRight, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faAngleDown, faCircle, faArrowRight, faEye, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebookF, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { faClock, faFileLines, faUser, faCalendar } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faClock, faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faCircle, faFileLines, faUser, faArrowRight, faCalendar, faEye )
+library.add(faUserSecret, faClock, faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faCircle, faFileLines, faUser, faArrowRight, faCalendar, faEye, faLocationDot )
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

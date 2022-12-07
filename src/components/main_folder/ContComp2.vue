@@ -108,8 +108,42 @@
     </div>
 
     <!--* EVENTS -->
-    <div>
+    <div class="text-center width-80">
+      <h1 class="font-celeste">Upcoming Events</h1>
+      <h1>Let's Work Together</h1>
+      <div>
 
+        <!-- FIRST ROW -->
+        <div class="row">
+          <img src="../../assets/images/artist-event-04-250x300.jpg" alt="photo events">
+          <div class="text-better">
+            <p>NOV 22, 2020</p>
+            <h3>Storytelling Workshop</h3>
+            <p><font-awesome-icon icon="fa-solid fa-location-dot" /> Texas, US</p>
+          </div>
+          <img src="../../assets/images/artist-event-03-250x300.jpg" alt="photo events">
+          <div class="text-better">
+            <p>OCT 10, 2020</p>
+            <h3>Painting Art Contest 2020</h3>
+            <p><font-awesome-icon icon="fa-solid fa-location-dot" /> New York, US</p>
+          </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+          <div class="text-better">
+            <p>NOV 23, 2020</p>
+            <h3>International Art Fair 2020</h3>
+            <p><font-awesome-icon icon="fa-solid fa-location-dot" /> Hamburg, Germany</p>
+          </div>
+          <img src="../../assets/images/artist-event-02-250x300.jpg" alt="photo events">
+          <div class="text-better">
+            <p>NOV 22, 2020</p>
+            <h3>Street Performance: Call for Artist</h3>
+            <p><font-awesome-icon icon="fa-solid fa-location-dot" /> Illinois, US</p>
+          </div>
+          <img src="../../assets/images/artist-event-01-250x300.jpg" alt="photo events">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -211,7 +245,8 @@ export default {
 }
 .text-better {
   padding: 1rem;
-  text-align: left; 
+  text-align: left;
+  line-height: 2rem;
 }
 .mx-half {
   margin: 0 0.5rem;
@@ -222,5 +257,11 @@ export default {
 .c-orange{
   color: orange;
   font-size: 1.2rem;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
 }
 </style>
