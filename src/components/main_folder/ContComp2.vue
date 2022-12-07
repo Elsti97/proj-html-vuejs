@@ -15,7 +15,7 @@
             :src="require(`../../assets/images/${elem.image}`)"
             alt="photo courses"
           />
-          <div>
+          <div class="card-hover">
             <p class="color-orange">{{ elem.price }}</p>
             <h4>{{ elem.name }}</h4>
             <div class="container color-gray">
@@ -263,5 +263,15 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 5rem;
+}
+.card-hover{
+  transition: transform .3s ease-out;
+  display: inline-block;
+  
+}
+.card-hover:hover{
+  border: 2px solid red;
+  transform: translate(0, -2rem);
+  background-color: white;
 }
 </style>

@@ -52,7 +52,7 @@ button {
     url("../../assets/images/artist-shape-03.png"),
     url("../../assets/images/artist-hero-image-03.png");
   background-repeat: no-repeat;
-  background-position: bottom, top, top, left, right;
+  background-position: bottom left, top right, top, left center, bottom right;
   background-size: contain;
 }
 .right-j {
@@ -63,10 +63,7 @@ button {
     url("../../assets/images/artist-shape-05.png");
     
   background-repeat: no-repeat;
-  background-position: top, left bottom, right top, right top;
+  background-position: bottom left, top,top right, bottom right;
   background-size: contain;
-}
-.img-right {
-  height: 100%;
 }
 </style>
