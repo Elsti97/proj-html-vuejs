@@ -103,11 +103,14 @@
             </div>
           </div>
         </div>
+        <p>Get into details now? <a href="#" class="c-orange">View all posts <font-awesome-icon icon="fa-solid fa-arrow-right" /></a></p>
       </div>
     </div>
 
     <!--* EVENTS -->
-    <div></div>
+    <div>
+
+    </div>
   </div>
 </template>
 
@@ -215,5 +218,9 @@ export default {
 }
 .m-1{
   margin: 1rem 0;
+}
+.c-orange{
+  color: orange;
+  font-size: 1.2rem;
 }
 </style>
