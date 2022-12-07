@@ -1,9 +1,6 @@
 <template>
   <main>
-    <JumboTron
-      :imageJumboLeft="JumboArrayLeft"
-      :imageJumboRight="JumboArrayRight"
-    />
+    <JumboTron />
     <ContComp1 />
     <CaroselComp :dataPhotos="photosArray" />
     <ContComp2 :dataCards="cardsArray"/>
@@ -30,50 +27,6 @@ export default {
   props: {},
   data() {
     return {
-      JumboArrayLeft: [
-        {
-          image: "artist-shape-02.png",
-          class: "absolute a-0",
-        },
-        {
-          image: "artist-shape-03.png",
-          class: "absolute a-0",
-        },
-        {
-          image: "artist-hero-image-01.jpg",
-          class: "absolute a-4",
-        },
-        {
-          image: "artist-hero-image-02.jpg",
-          class: "absolute a-0",
-        },
-        {
-          image: "artist-hero-image-03.png",
-          class: "absolute a-0",
-        },
-      ],
-      JumboArrayRight: [
-        {
-          image: "artist-shape-01.png",
-          class: "absolute a-0",
-        },
-        {
-          image: "artist-shape-03.png",
-          class: "absolute a-2",
-        },
-        {
-          image: "artist-shape-04.png",
-          class: "absolute a-3",
-        },
-        {
-          image: "artist-shape-05.png",
-          class: "absolute a-3",
-        },
-        {
-          image: "artist-hero-image-04.jpg",
-          class: "absolute a-4",
-        },
-      ],
       photosArray: [
         { 
           image: "artist-testimonial-avatar-01.jpg",

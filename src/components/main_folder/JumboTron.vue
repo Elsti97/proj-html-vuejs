@@ -1,15 +1,6 @@
 <template>
   <div class="jumbotron width-3">
-    <div class="left-j jumbo relative">
-      <img
-        class="absolute"
-        v-for="(elem, index) in imageJumboLeft"
-        :key="index"
-        imageJumboLeft="elem"
-        :src="require(`../../assets/images/${elem.image}`)"
-        alt="backgroung-image"
-        :class="elem.class"
-      />
+    <div class="left-j jumbo">
     </div>
 
     <div class="center-j jumbo">
@@ -18,16 +9,7 @@
       <button>Get started today</button>
     </div>
 
-    <div class="right-j jumbo relative">
-      <img
-        class="absolute"
-        v-for="(elem, index) in imageJumboRight"
-        :key="index"
-        imageJumboRight="elem"
-        :src="require(`../../assets/images/${elem.image}`)"
-        alt="backgroung-image"
-        :class="elem.class"
-      />
+    <div class="right-j jumbo">
     </div>
   </div>
 </template>
@@ -35,10 +17,6 @@
 <script>
 export default {
   name: "JumboTron",
-  props: {
-    imageJumboLeft: Array,
-    imageJumboRight: Array,
-  },
 };
 </script>
 
@@ -46,36 +24,17 @@ export default {
 .jumbotron {
   display: flex;
   justify-content: space-around;
+  // align-items: center;
   padding: 10rem 0;
+  // height: 30rem;
   background-color: #fbf9f6;
-  .relative {
-    position: relative;
-  }
-  .absolute {
-    position: absolute;
-    width: 200px;
-  }
-  .a-0 {
-    z-index: -1;
-  }
-  .a-1 {
-    z-index: 1;
-  }
-  .a-2 {
-    z-index: 2;
-  }
-  .a-3 {
-    z-index: 3;
-  }
-  .a-4 {
-    z-index: 4;
-  }
-}
-.center-j {
-  text-align: center;
 }
 .jumbo{
   width: calc(100% / 3 - 1rem);
+}
+.center-j {
+  text-align: center;
+  // padding: 10rem 0;
 }
 button {
   background-color: #ef6f31;
@@ -84,5 +43,30 @@ button {
   padding: 1rem 3rem;
   border-radius: 0.3rem;
   color: white;
+}
+.left-j {
+  background-image:
+    url("../../assets/images/artist-hero-image-01.jpg"),
+    url("../../assets/images/artist-hero-image-02.jpg"),
+    url("../../assets/images/artist-shape-02.png"),
+    url("../../assets/images/artist-shape-03.png"),
+    url("../../assets/images/artist-hero-image-03.png");
+  background-repeat: no-repeat;
+  background-position: bottom, top, top, left, right;
+  background-size: contain;
+}
+.right-j {
+  background-image: 
+    url("../../assets/images/artist-hero-image-04.jpg"),
+    url("../../assets/images/artist-shape-01.png"),
+    url("../../assets/images/artist-shape-04.png"),
+    url("../../assets/images/artist-shape-05.png");
+    
+  background-repeat: no-repeat;
+  background-position: top, left bottom, right top, right top;
+  background-size: contain;
+}
+.img-right {
+  height: 100%;
 }
 </style>
